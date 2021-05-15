@@ -187,7 +187,7 @@ textarea {
 	  	
 	  	function SendMsg() {
 			
-Core.Speak  ("say someg");
+
 	  	
 	  	//let regex =
 	  	///////////////test input-user if regex != [[:alpha:]]
@@ -205,6 +205,7 @@ Core.Speak  ("say someg");
 	  	if( user_input.value === "video")creatBoxVideo("video.mp4");
 	  	else
 	  	var utterance = bot.reply("local_user", user_input.value);
+			Core.Speak  ("say someg");
 	  	createBoxMsg("chat Bot", utterance);
 	  	let utter = new SpeechSynthesisUtterance();
 	  	utter.lang = 'en-US';
