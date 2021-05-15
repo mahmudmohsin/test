@@ -207,7 +207,7 @@ textarea {
 	  	var utterance = bot.reply("local_user", user_input.value);
 			
 	  	createBoxMsg("chat Bot", utterance);
-			Core.Speak  ("chat bot", utterance);
+			
 	  	let utter = new SpeechSynthesisUtterance();
 	  	utter.lang = 'en-US';
 	  	utter.text = utterance;
@@ -326,7 +326,7 @@ textarea {
 	  
 	  document.querySelector('#btnGiveCommand').addEventListener('click', function(){
 	  recognition.start();
-	  
+	  Core.Speak  ("say something");
 	  });
 	  
 	  
