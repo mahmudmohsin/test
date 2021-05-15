@@ -186,6 +186,8 @@ textarea {
 	  	};
 	  	
 	  	function SendMsg() {
+			
+Core.Speak  ("say something");
 	  	
 	  	//let regex =
 	  	///////////////test input-user if regex != [[:alpha:]]
@@ -208,7 +210,6 @@ textarea {
 	  	utter.lang = 'en-US';
 	  	utter.text = utterance;
 	  	utter.volume = 0.5;
-Core.Speak = utterance; 
 	  	
 	  	// event after text has been spoken
 	  	utter.onend = function() {
@@ -224,7 +225,7 @@ Core.Speak = utterance;
 	  
 	  	}
 		 
-		  Core.speak("say somthing");
+		  
 		  
 	  	function createBoxMsg(for_, msg, string) {
 	  	
