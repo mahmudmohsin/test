@@ -206,7 +206,7 @@ textarea {
 	  	createBoxMsg("chat Bot", utterance);
 	  	let utter = new SpeechSynthesisUtterance();
 	  	utter.lang = 'en-US';
-	  	utter.text = utterance;
+	  	utter.text = textToSpeak;
 	  	utter.volume = 0.5;
 	  	
 	  	// event after text has been spoken
