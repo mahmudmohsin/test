@@ -208,6 +208,7 @@ textarea {
 	  	utter.lang = 'en-US';
 	  	utter.text = utterance;
 	  	utter.volume = 0.5;
+			Core.speak (utterance);
 	  	
 	  	// event after text has been spoken
 	  	utter.onend = function() {
@@ -223,7 +224,7 @@ textarea {
 	  
 	  	}
 		 
-		  Core.speak (utterance);
+		  
 		  
 	  	function createBoxMsg(for_, msg, string) {
 	  	
