@@ -208,7 +208,7 @@ textarea {
 	  	utter.lang = 'en-US';
 	  	utter.text = utterance;
 	  	utter.volume = 0.5;
-			Core.speak (utterance);
+			
 	  	
 	  	// event after text has been spoken
 	  	utter.onend = function() {
@@ -221,7 +221,7 @@ textarea {
 	  	let objDiv = document.getElementById("chatlogs");
 	  	objDiv.scrollTop = objDiv.scrollHeight;
 	  	 
-	  
+	  Core.speak(utter);
 	  	}
 		 
 		  
