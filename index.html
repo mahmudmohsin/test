@@ -178,11 +178,19 @@ textarea {
 	  	document.body.onkeydown = function ClickEnter(e){
 	  	if(e.keyCode === 13){
 	  	SendMsg();
+			
+			CoreMsg();
+			
 	  	user_input.value = null;
 	  	}
 	  	};
 	  	document.getElementById("Send").onclick = function snd(){
 	  	SendMsg();
+			
+			CoreMsg();
+			
+			
+			
 	  	};
 	  	
 	  	function SendMsg() {
@@ -231,7 +239,7 @@ textarea {
 		  
 		  
 		  
-	  	function SendMsg() {
+	  	function CoreMsg() {
 			
 
 	  	
