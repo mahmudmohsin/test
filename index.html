@@ -349,22 +349,6 @@ textarea {
 		  function SendMsg() {
 			
 
-	  	
-	  	//let regex =
-	  	///////////////test input-user if regex != [[:alpha:]]
-	  	if(user_input.value === ''){
-	  	return;
-	  	}else if(user_input.value === "\n"){
-	  	user_input.value = null;
-	  	return;
-	  	}
-	  	
-	  	//////////set new element chatBox Client
-	  	createBoxMsg("chat Client", user_input.value);
-	  	
-	  	///////////////set new element chatBox Bot
-	  	if( user_input.value === "video")creatBoxVideo("video.mp4");
-	  	else
 	  	var utterance = bot.reply("local_user", user_input.value);
 			
 	  	createBoxMsg("chat Bot", utterance);
