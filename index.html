@@ -345,36 +345,6 @@ textarea {
 	    
 	    <script type="text/javascript">
 	  	
-	  	
-	  	let bot = new RiveScript();
-	  	let user_input = document.getElementById('user_input');
-	  	let chat_logs = document.getElementById('chatlogs');
-	  	
-	  	// Load an individual file.
-	  	bot.loadFile("brain/brain.rive", loading_brain_done, loading_brain_error);
-	  	bot.loadFile("bain/bangla.rive", loading_brain_done, loading_brain_error);
-	  	bot.loadFile("brain/star.rive", loading_brain_done, loading_brain_error);
-	  	
-	  	function loading_brain_done () {
-	  	console.log('loading Done');
-	  	bot.sortReplies();
-	  	}
-	  	function loading_brain_error () {
-	  	console.log('error loading')
-	  	}
-	  	
-	  	
-	  	document.body.onkeydown = function ClickEnter(e){
-	  	if(e.keyCode === 13){
-	  	SendMsg();
-	  	user_input.value = null;
-	  	}
-	  	};
-	  	document.getElementById("Send").onclick = function snd(){
-	  	SendMsg();
-	  	};
-	  	
-		  
 		  
 		  function SendMsg() {
 			
