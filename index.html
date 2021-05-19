@@ -354,18 +354,8 @@ textarea {
 			
 	  	createBoxMsg("chat Bot", utterance);
 			
-	  	let utter = new SpeechSynthesisUtterance();
-	  	utter.lang = 'en-US';
-	  	utter.text = utterance;
-	  	utter.volume = 0.5;
+			  Core.speak ("say something");
 	  	
-	  	// event after text has been spoken
-	  	utter.onend = function() {
-	  	recognition.start();
-	  	}
-	  	// speak
-	  	window.speechSynthesis.speak(utter);
-			
 	  	//////////update page
 	  	let objDiv = document.getElementById("chatlogs");
 	  	objDiv.scrollTop = objDiv.scrollHeight;
