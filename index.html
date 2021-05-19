@@ -174,11 +174,21 @@ textarea {
 	  	console.log('error loading')
 	  	}
 	  	
-	  	
-	  	document.body.onkeydown = function ClickEnter(e){
+		  
+		  
+		  document.body.onkeydown = function ClickEnter(e){
 	  	if(e.keyCode === 13){
 	  	SendMsg();
 			
+	  	user_input.value = null;
+	  	}
+	  	};
+		  
+		  
+	  	
+	  	document.body.onkeydown = function ClickEnter(e){
+	  	if(e.keyCode === 13){
+	  	
 			CoreMsg();
 			
 	  	user_input.value = null;
@@ -187,11 +197,15 @@ textarea {
 	  	document.getElementById("Send").onclick = function snd(){
 	  	SendMsg();
 			
+	  	};
+		  
+		  
+		  document.getElementById("Send").onclick = function snd(){
+	  	
 			CoreMsg();
 			
-			
-			
 	  	};
+		  
 	  	
 	  	function SendMsg() {
 			
@@ -260,7 +274,7 @@ textarea {
 	  	else
 	  	var utterance = bot.reply("local_user", user_input.value);
 			
-	  	createBoxMsg("chat Bot", utterance);
+	  	
 Core.speak (utterance);
 	  	//////////update page
 	  	let objDiv = document.getElementById("chatlogs");
