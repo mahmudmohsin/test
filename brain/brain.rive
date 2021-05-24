@@ -58,6 +58,13 @@
 ! person i = you
 ! sub ও = o
 
+
+
++ হই
+- হই
+
+
+
 + (hello|hlw|hi|moon|hi moon|hello moon|hlw moon)
 * <get name> != undefined => {random} 
 ^ Hello there, <get name>!| 
