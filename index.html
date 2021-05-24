@@ -209,18 +209,11 @@ textarea {
 	  	var utterance = bot.reply("local_user", user_input.value);
 			
 	  	createBoxMsg("chat Bot", utterance);
+		
+		
 			
-	  	let utter = new SpeechSynthesisUtterance();
-	  	utter.lang = 'en-US';
-	  	utter.text = utterance;
-	  	utter.volume = 0.5;
-	  	
-	  	// event after text has been spoken
-	  	utter.onend = function() {
-	  	recognition.start();
-	  	}
-	  	// speak
-	  	window.speechSynthesis.speak(utter);
+
+
 			
 	  	//////////update page
 	  	let objDiv = document.getElementById("chatlogs");
