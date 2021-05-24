@@ -188,8 +188,10 @@ textarea {
 			
 	  	};
 	  	
-		 
-		  	function SendMsg() {
+		
+		    	
+	  	
+	  	function SendMsg() {
 	  	
 	  	//let regex =
 	  	///////////////test input-user if regex != [[:alpha:]]
@@ -220,8 +222,14 @@ textarea {
 	  	utter.onend = function() {
 	  	recognition.start();
 	  	}
-		  
-		  
+	  	// speak
+	  	window.speechSynthesis.speak(utter);
+	  	//////////update page
+	  	let objDiv = document.getElementById("chatlogs");
+	  	objDiv.scrollTop = objDiv.scrollHeight;
+	  	
+	  
+	  	}
 		
 		  
 	  	function createBoxMsg(for_, msg, string) {
