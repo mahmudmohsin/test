@@ -67,7 +67,7 @@
 
 
 
-+ (hello|hlw|hi|moon|hi moon|hello moon|hlw moon)
++ (hello|hlw|hi|saba|hi saba|hello saba|hlw saba)
 * <get name> != undefined => {random} 
 ^ Hello there, <get name>!| 
 ^ Nice to see you again, <get name>!| 
@@ -348,5 +348,5 @@
 
 
 
-! var name= Moon
+! var name= Saba
 ! var master= Mahmud Mohsin
