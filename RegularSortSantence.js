@@ -1189,25 +1189,25 @@ let A = document.getElementById("A");
     	
     	
     	A.addEventListener("click", function(){
-    	Core.speak = "What’s up?";
+    	Core.speak("What’s up?");
     	
     	})
     	B.addEventListener("click", function(){
     	B.style.background='#f0e9ee';
     	document.getElementById('user_input').style.display='none';
-    	Core.speak = "Carry on";
+    	Core.speak("Carry on");
     	
     	})
     	C.addEventListener("click", function(){
     	C.style.background='#f0e9ee';
     	document.getElementById('user_input').style.display='none';
-    	Core.speak = "Wow";
+    	Core.speak("Wow");
     	
     	})
     	D.addEventListener("click", function(){
     	D.style.background='#f0e9ee';
     	document.getElementById('user_input').style.display='none';
-    	Core.speak = "My goodness!";
+    	Core.speak("My goodness!");
     	
     	})
     	E.addEventListener("click", function(){
